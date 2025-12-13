@@ -1,0 +1,48 @@
+# Installation & Invite
+
+Getting TicketForge running on your server takes just a few clicks.
+
+## 1. Invite the Bot
+
+To start using TicketForge, you need to invite the bot to your Discord server and authorize it with the necessary permissions.
+
+<div class="grid cards" markdown>
+
+- ## :fontawesome-brands-discord: **Invite TicketForge**
+
+  Click below to add the bot to your server. You must have **Manage Server** permissions.
+
+  [## :fontawesome-brands-discord:Invite Bot](https://discord.com/oauth2/authorize?client_id=1312832688889008218&permissions=343866207248&integration_type=0&scope=bot+applications.commands){ .md-button .md-button--primary }
+
+</div>
+
+## 2. Required Permissions
+
+TicketForge requires specific permissions to function correctly. When inviting the bot, ensure the following permissions are granted:
+
+| Permission          | Reason                                                               |
+| :------------------ | :------------------------------------------------------------------- |
+| **Manage Channels** | To create ticket channels and rename them.                           |
+| **Manage Roles**    | To assign support roles and manage permissions for specific tickets. |
+| **Manage Messages** | To pin messages and delete bot commands/triggers.                    |
+| **Embed Links**     | To send the rich embed panels.                                       |
+| **Attach Files**    | To save and send HTML transcripts.                                   |
+| **View Audit Log**  | Used for the `History` dashboard feature to track changes.           |
+
+!!! warning "Role Hierarchy"
+For TicketForge to manage roles (e.g., adding a "Support" role to a user), the **TicketForge bot role** must be **higher** than the role it is trying to assign in your Discord Server Settings > Roles list.
+
+## 3. Verify Installation
+
+Once invited, go to a text channel in your server and type `/ping`.
+If the bot responds with **"🏓 Pong!"**, it is successfully installed and online.
+
+---
+
+## Troubleshooting
+
+**The bot is offline?**
+Check our [Status Page](https://ticketforge.statuspage.io/) to see if there are any ongoing outages.
+
+**Commands not showing up?**
+Sometimes Discord takes up to an hour to register slash commands for new bots. You can try re-inviting the bot with the link above to force a command refresh.

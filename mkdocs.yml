@@ -1,0 +1,78 @@
+site_name: TicketForge 
+site_description: Documentation for TicketForge - The ultimate Discord ticketing bot.
+site_url: https://docs.ticketforge.xyz/
+
+theme:
+  name: material
+  font:
+    text: Jost
+    code: Roboto Mono
+
+  # 2. BRANDING ASSETS
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - navigation.top # Adds "Back to Top" button
+
+extra_css:
+  - stylesheets/extra.css
+
+# 3. FOOTER SOCIAL LINKS
+extra:
+  copyright: Copyright &copy; 2025 Evolvex
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/ya3Rv9VmpR
+      name: Join Support Server
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username
+      name: GitHub
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation & Invite: getting-started/installation.md
+      - Dashboard Overview: getting-started/dashboard.md
+  - Panel Configuration:
+      - Creating Panels: panels/create.md
+      - Interaction Styles: panels/interaction-styles.md
+      - Message & Embeds: panels/messages.md
+      - Ticket Forms: panels/forms.md
+      - Ticket Management: panels/management.md
+  - Advanced Features:
+      - Automation: features/automation.md
+      - Transcripts & Logging: features/transcripts.md
+      - Claiming System: features/claiming.md
+      - Rating System: features/ratings.md
+      - Limits & Schedules: features/limits.md
+  - Server Settings:
+      - Roles & Permissions: settings/roles.md
+      - Commands: settings/commands.md
+  - Premium:
+      - Subscription Plans: premium/plans.md
+      - Managing Billing: premium/billing.md
+  - Legal:
+      - Terms of Service: legal/terms.md
+      - Privacy Policy: legal/privacy.md

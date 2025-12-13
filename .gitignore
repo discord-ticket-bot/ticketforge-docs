@@ -1,0 +1,10 @@
+# MkDocs build directory
+site/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache (if you use custom scripts)
+__pycache__/
+*.py[cod]
