@@ -77,3 +77,7 @@ nav:
 plugins:
   - search
   - glightbox
+  - social: # ADD THIS
+      cards_layout_options:
+        background_color: "#020617" # Matches your dark background
+        color: "#7c3aed" # Matches your purple text

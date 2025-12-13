@@ -12,6 +12,11 @@ To grant access to other staff (e.g., "Head Moderator") without giving them full
 2.  Find **Dashboard Access**.
 3.  Select the roles you want to authorize.
 
+<figure markdown>
+  ![Roles Config](../assets/images/settings/roles-config.png){ loading=lazy }
+  <figcaption>Selecting roles to grant dashboard access.</figcaption>
+</figure>
+
 !!! note "Access Level"
     Roles added here will have full access to edit Panels, Messages, and Settings for this specific server. They cannot access Billing or Subscription settings.
 
@@ -23,7 +28,21 @@ If you have problematic users or roles that abuse the ticket system, you can bla
 2.  Find **Interaction Blacklist**.
 3.  Select the roles.
 
+<figure markdown>
+  ![Blacklist Config](../assets/images/settings/blacklist-roles-config.png){ loading=lazy }
+  <figcaption>Preventing specific roles from interacting with the bot.</figcaption>
+</figure>
+
 **Effect:** Users with these roles cannot click _any_ button, use _any_ dropdown, or execute _any_ slash command associated with the bot.
+
+## Server Language
+
+You can change the language the bot uses for default system messages (e.g., errors, time formatting).
+
+<figure markdown>
+  ![Language Config](../assets/images/settings/language.png){ loading=lazy }
+  <figcaption>Setting the bot's default language for the server.</figcaption>
+</figure>
 
 ## Hierarchy Warning
 

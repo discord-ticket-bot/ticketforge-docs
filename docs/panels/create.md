@@ -33,6 +33,11 @@ Once your panel is created and configured, you need to send it to a text channel
 
 The bot will immediately post the panel message with the attached buttons or dropdown menu in Discord.
 
+<figure markdown>
+  ![Panel Example](../assets/images/panels/panel-example.png){ loading=lazy width="500" }
+  <figcaption>An example of a support panel message in the dashboard preview.</figcaption>
+</figure>
+
 !!! tip "Updating Live Panels"
     If you change the text, color, or button style of a panel _after_ sending it, you do not need to delete and resend it.
 

@@ -2,6 +2,11 @@
 
 The Claiming System prevents staff collisions by allowing a single moderator to "take ownership" of a ticket. This is essential for large support teams.
 
+<figure markdown>
+  ![Claiming Example](../assets/images/features/claim-example.png){ loading=lazy }
+  <figcaption>A ticket that has been claimed by a staff member.</figcaption>
+</figure>
+
 ## Enabling Claiming
 
 Go to the **Claiming System** tab in the Panel Editor and toggle **Enable Claiming System**.

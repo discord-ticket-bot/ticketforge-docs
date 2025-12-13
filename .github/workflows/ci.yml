@@ -1,18 +1,22 @@
-name: ci
-on:
-  push:
-    branches:
-      - main
-permissions:
-  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      # CRITICAL CHANGE HERE: Added mkdocs-glightbox
-      - run: pip install mkdocs-material mkdocs-glightbox
-      - run: mkdocs gh-deploy --force
+
+      # --- ADD THIS BLOCK HERE ---
+      - name: Install system dependencies (Cairo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+      # ---------------------------
+      - name: Install dependencies
+        run: pip install mkdocs-material mkdocs-glightbox "mkdocs-material[imaging]"
+
+      - name: Deploy
+        run: mkdocs gh-deploy --force

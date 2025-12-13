@@ -2,6 +2,11 @@
 
 TicketForge operates on a Freemium model. The core ticketing features are free forever, while advanced automation and customization require a subscription.
 
+<figure markdown>
+  ![Premium Plans](../assets/images/premium/premium-plans.png){ loading=lazy }
+  <figcaption>The subscription tier selection screen.</figcaption>
+</figure>
+
 ## Plan Comparison
 
 | Feature                     | Free Plan        | Premium Plan                           |

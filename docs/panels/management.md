@@ -2,6 +2,11 @@
 
 This section controls the structural behavior of the tickets created by this panel: where they go, what they are named, and who can see them.
 
+<figure markdown>
+  ![Management Overview](../assets/images/panels/management-overview.png){ loading=lazy }
+  <figcaption>Configuring channel naming, categories, and role access.</figcaption>
+</figure>
+
 ## Channel Naming
 
 You can define a naming pattern for your tickets.

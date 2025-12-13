@@ -24,6 +24,6 @@ You can add multiple questions to gather context (e.g., "Minecraft Username", "R
 Once submitted, the answers are automatically compiled into an embed field and posted as the first message inside the newly created ticket.
 
 <figure markdown>
-  ![Form Preview](../assets/images/form-preview.png){ width="400" }
-  <figcaption>A preview of how the form looks in Discord.</figcaption>
+  ![Form Modal](../assets/images/panels/form-modal.png){ loading=lazy width="450" }
+  <figcaption>The modal form users see when clicking Create Ticket.</figcaption>
 </figure>

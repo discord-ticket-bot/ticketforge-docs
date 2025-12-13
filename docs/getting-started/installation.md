@@ -14,6 +14,11 @@ To start using TicketForge, you need to invite the bot to your Discord server an
 
 </div>
 
+<figure markdown>
+  ![Invite Screen](../assets/images/getting-started/invite-screen.png){ loading=lazy width="450" }
+  <figcaption>The Discord authorization screen when inviting the bot.</figcaption>
+</figure>
+
 ## 2. Required Permissions
 
 TicketForge requires specific permissions to function correctly. When inviting the bot, ensure the following permissions are granted:

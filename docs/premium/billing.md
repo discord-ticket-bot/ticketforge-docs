@@ -6,6 +6,11 @@ You can manage your subscription directly from the TicketForge Dashboard.
 
 Navigate to the **Premium** tab. The top card shows your current status:
 
+<figure markdown>
+  ![Billing Overview](../assets/images/premium/billing-overview.png){ loading=lazy }
+  <figcaption>Your current subscription status and renewal date.</figcaption>
+</figure>
+
 - **Active:** Subscription is valid and running.
 - **Past Due:** Payment failed. We will retry automatically.
 - **Canceled:** Subscription will end at the specified date.

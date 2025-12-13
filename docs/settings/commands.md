@@ -6,6 +6,11 @@ TicketForge offers granular control over Slash Commands. You can disable specifi
 
 Navigate to the **Commands** tab in the sidebar. You will see a list of all available bot commands.
 
+<figure markdown>
+  ![Commands List](../assets/images/settings/commands-list.png){ loading=lazy }
+  <figcaption>The command management interface allowing you to enable or disable specific commands.</figcaption>
+</figure>
+
 ### Command Settings
 
 Click on any command to edit its permissions:

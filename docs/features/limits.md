@@ -6,6 +6,11 @@ Control the flow of tickets to prevent spam and ensure your team only receives r
 
 You can cap the number of tickets to prevent abuse.
 
+<figure markdown>
+  ![Limits Configuration](../assets/images/features/limits-config.png){ loading=lazy }
+  <figcaption>Setting user and server-wide ticket caps.</figcaption>
+</figure>
+
 | Limit Type             | Description                                                                                            |
 | :--------------------- | :----------------------------------------------------------------------------------------------------- |
 | **Per User Limit**     | Max active tickets a single user can have open simultaneously (Default: 1).                            |
@@ -21,6 +26,11 @@ Assign specific roles (e.g., "VIP", "Server Booster") that can ignore these limi
 ## Operational Schedule
 
 Define your support hours to manage user expectations.
+
+<figure markdown>
+  ![Schedule Grid](../assets/images/features/schedule-grid.png){ loading=lazy }
+  <figcaption>The interactive weekly grid. Blue indicates open hours.</figcaption>
+</figure>
 
 1.  **Timezone:** Set your server's local timezone.
 2.  **Weekly Grid:** Click on hour blocks to toggle them **Open** (Blue) or **Closed** (Grey).

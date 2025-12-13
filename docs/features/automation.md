@@ -2,6 +2,11 @@
 
 TicketForge can perform automated actions to help maintain your server's hygiene and keep users informed.
 
+<figure markdown>
+  ![Automation Settings](../assets/images/features/automation-settings.png){ loading=lazy }
+  <figcaption>Configuring auto-close rules and leave handling.</figcaption>
+</figure>
+
 ## User Leave Handling
 
 What happens if a user opens a ticket and then leaves the server?

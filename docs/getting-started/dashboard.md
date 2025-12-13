@@ -11,11 +11,19 @@ After logging in via Discord, you will see the **Server List**.
 - **Active Servers:** Servers where TicketForge is already present. Click **Manage** to enter the configuration area.
 - **Available Servers:** Servers where you have administrative rights but the bot is missing. Click **Invite** to add it.
 
-![Server List](../assets/images/server-list-preview.png){ loading=lazy }
+<figure markdown>
+  ![Server List](../assets/images/server-list-preview.png){ loading=lazy }
+  <figcaption>The server selection screen showing active and available servers.</figcaption>
+</figure>
 
 ## 2. Navigation Sidebar
 
 Once you select a server, the sidebar provides access to specific tools:
+
+<figure markdown>
+  ![Dashboard Overview](../assets/images/dashboard/main-overview.png){ loading=lazy }
+  <figcaption>The main dashboard interface with sidebar navigation.</figcaption>
+</figure>
 
 | Section                                         | Description                                                                                          |
 | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------- |

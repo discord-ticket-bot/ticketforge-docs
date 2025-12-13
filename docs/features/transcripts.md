@@ -6,6 +6,11 @@ TicketForge provides robust record-keeping features to ensure you never lose con
 
 A transcript is a permanent HTML file containing the full chat history, timestamps, and attachments of a ticket.
 
+<figure markdown>
+  ![Transcript Log](../assets/images/features/transcript-example.png){ loading=lazy }
+  <figcaption>The transcript log message containing the downloadable HTML file.</figcaption>
+</figure>
+
 ### Configuration
 
 Navigate to **Archiving & Logging** in the Panel Editor.
