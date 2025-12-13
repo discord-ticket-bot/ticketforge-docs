@@ -1,43 +1,35 @@
-/* 1. Import the Dashboard Font (Jost) */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 
 :root {
-  /* --- TicketForge Brand Colors (Violet) --- */
-  --md-primary-fg-color: #7c3aed; /* Violet-600 */
-  --md-primary-fg-color--light: #8b5cf6; /* Violet-500 */
-  --md-primary-fg-color--dark: #6d28d9; /* Violet-700 */
+  --md-primary-fg-color: #7c3aed;
+  --md-primary-fg-color--light: #8b5cf6;
+  --md-primary-fg-color--dark: #6d28d9;
   --md-accent-fg-color: #7c3aed;
 
-  /* --- Dashboard Backgrounds (Slate-950) --- */
-  --md-default-bg-color: #020617; /* Main Background */
-  --md-bg-color--alt: #0f172a; /* Sidebar/Table of Contents Background */
+  --md-default-bg-color: #020617;
+  --md-bg-color--alt: #0f172a;
 
-  /* --- Text Colors --- */
-  --md-default-fg-color: #f8fafc; /* Text-Gray-100 */
-  --md-default-fg-color--light: #94a3b8; /* Text-Gray-400 */
-  --md-default-fg-color--lighter: #64748b; /* Disabled text */
+  --md-default-fg-color: #f8fafc;
+  --md-default-fg-color--light: #94a3b8;
+  --md-default-fg-color--lighter: #64748b;
 
-  /* --- UI Elements --- */
-  --md-code-bg-color: #1e293b; /* Code blocks (Slate-800) */
+  --md-code-bg-color: #1e293b;
   --md-admonition-bg-color: #1e293b;
 }
 
-/* 2. Apply Font */
 body,
 .md-typeset,
 .md-nav {
   font-family: "Jost", sans-serif !important;
 }
 
-/* 3. Match Dashboard UI (Rounded Corners & Borders) */
 .md-typeset .admonition,
 .md-typeset pre,
 .md-typeset code,
 .md-search__input {
-  border-radius: 0.75rem; /* rounded-xl */
+  border-radius: 0.75rem;
 }
 
-/* 4. Custom Buttons */
 .md-typeset .md-button--primary {
   background-color: var(--md-primary-fg-color);
   color: white !important;
@@ -50,12 +42,11 @@ body,
 .md-typeset .md-button--primary:hover {
   background-color: var(--md-primary-fg-color--light);
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.3); /* Purple Glow */
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.3);
 }
 
-/* 5. Header & Tabs Styling (Unified Dark Glass Look) */
 .md-header {
-  background-color: rgba(2, 6, 23, 0.9) !important; /* Dark Slate-950 */
+  background-color: rgba(2, 6, 23, 0.9) !important;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -86,8 +77,6 @@ body,
 /* ---------------------------------------------------------
    6. CARD GRID STYLING (Fixed)
 --------------------------------------------------------- */
-
-/* Grid Container */
 .md-typeset .grid.cards ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -96,7 +85,6 @@ body,
   padding: 0;
 }
 
-/* Individual Cards */
 .md-typeset .grid.cards ul li {
   background-color: rgba(30, 41, 59, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -105,13 +93,12 @@ body,
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* FIX 1: Prevents button from stretching full width */
+  align-items: flex-start;
 
   transition: all 0.3s ease-in-out;
   margin: 0;
 }
 
-/* Card Hover Effect */
 .md-typeset .grid.cards ul li:hover {
   border-color: var(--md-primary-fg-color);
   background-color: rgba(30, 41, 59, 0.8);
@@ -119,16 +106,14 @@ body,
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
 }
 
-/* FIX 2: Only target the FIRST bold element as the Title */
 .md-typeset .grid.cards ul li p > strong:first-of-type {
-  display: inline-block; /* allows icon to sit next to it */
+  display: inline-block;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: var(--md-primary-fg-color--light);
   font-weight: 700;
 }
 
-/* Card Links (Button) */
 .md-typeset .grid.cards ul li a {
   margin-top: auto;
   padding-top: 1rem;
@@ -140,11 +125,10 @@ body,
   text-decoration: none;
 }
 
-/* Specific styling for the actual button class if present */
 .md-typeset .grid.cards ul li .md-button {
-  width: auto; /* Ensures button doesn't stretch */
-  margin-top: 1rem; /* Adds space above button */
-  padding-top: 0.4rem; /* Reset padding for buttons */
+  width: auto;
+  margin-top: 1rem;
+  padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
 
@@ -155,22 +139,16 @@ body,
 /* ---------------------------------------------------------
    7. SIDEBAR NAVIGATION (UX Polish)
 --------------------------------------------------------- */
-
-/* 1. Base Styling for ALL links (Active or Not) */
 .md-nav__item .md-nav__link {
   display: flex;
   align-items: center;
-  /* Increased spacing to prevent top clipping */
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
-  /* Make the click area bigger and uniform */
   margin-left: -12px;
   padding: 8px 12px;
   border-radius: 0.5rem;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s;
-  /* Add invisible border to prevent layout jumping when active adds a border */
   border: 1px solid transparent;
-  /* Ensure it renders above potential clippers */
   position: relative;
   z-index: 1;
 }
@@ -187,7 +165,7 @@ body,
   font-weight: 700;
   box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
 }
-/* 4. Fix arrow icon alignment */
+
 .md-nav__link .md-nav__icon {
   height: 1.1rem;
   width: 1.1rem;
@@ -197,7 +175,6 @@ body,
 /* ---------------------------------------------------------
    8. GLOBAL SCROLLBAR STYLING
 --------------------------------------------------------- */
-/* The scrollbar track (background) */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -207,29 +184,26 @@ body,
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* The scrollbar handle (the moving part) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(124, 58, 237, 0.3); /* Low opacity purple */
+  background-color: rgba(124, 58, 237, 0.3);
   border-radius: 4px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--md-primary-fg-color); /* Bright purple */
+  background-color: var(--md-primary-fg-color);
 }
 
 /* ---------------------------------------------------------
    9. GLASS-MORPHISM ADMONITIONS (Info/Warning Boxes)
 --------------------------------------------------------- */
 .md-typeset .admonition {
-  background-color: rgba(30, 41, 59, 0.4) !important; /* See-through dark */
+  background-color: rgba(30, 41, 59, 0.4) !important;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-left-width: 4px !important; /* Keep the colored indicator thick */
+  border-left-width: 4px !important;
   box-shadow: none;
 }
 
-/* Fix the Title background to blend in */
 .md-typeset .admonition-title {
   background-color: transparent !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -240,40 +214,30 @@ body,
    10. CUSTOM DASHBOARD WARNINGS (Amber Style)
    Matches: bg-amber-500/10 border-amber-500/20 text-amber-500
 --------------------------------------------------------- */
-
-/* The Container */
 .md-typeset .admonition.warning {
-  background-color: rgba(
-    245,
-    158,
-    11,
-    0.1
-  ) !important; /* Amber-500 at 10% opacity */
-  border: 1px solid rgba(245, 158, 11, 0.2) !important; /* Amber-500 at 20% opacity */
-  border-left-width: 4px !important; /* Keep the thick indicator line */
-  border-left-color: #f59e0b !important; /* Solid Amber-500 */
-  color: #d1d5db; /* Text-Gray-300 */
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
+  border-left-width: 4px !important;
+  border-left-color: #f59e0b !important;
+  color: #d1d5db;
 }
 
-/* The Title (e.g., "Permission Check") */
 .md-typeset .admonition.warning .admonition-title {
-  color: #f59e0b !important; /* Solid Amber-500 */
+  color: #f59e0b !important;
   background-color: transparent !important;
   border-bottom: 1px solid rgba(245, 158, 11, 0.1);
 }
 
-/* The Icon Styling */
 .md-typeset .admonition.warning .admonition-title::before {
-  background-color: #f59e0b !important; /* Colors the icon Amber */
+  background-color: #f59e0b !important;
 }
 
 .md-typeset pre > code {
-  background-color: #0f172a !important; /* Darker Slate (Contrast) */
-  border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle Border */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2); /* Depth */
+  background-color: #0f172a !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
 
-/* Make the "Copy" button stand out slightly more on hover */
 .md-clipboard:hover {
   color: var(--md-primary-fg-color) !important;
 }
@@ -283,22 +247,20 @@ body,
 --------------------------------------------------------- */
 .md-typeset table:not([class]) {
   border-radius: 0.75rem;
-  overflow: hidden; /* Ensures corners stay rounded */
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1); /* clean border */
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
 }
 
-/* Table Header Styling */
 .md-typeset table:not([class]) th {
-  background-color: rgba(124, 58, 237, 0.15) !important; /* Purple Tint */
+  background-color: rgba(124, 58, 237, 0.15) !important;
   color: #fff !important;
   font-weight: 600;
   border-bottom: 1px solid rgba(124, 58, 237, 0.3);
 }
 
-/* Cell Padding */
 .md-typeset table:not([class]) td,
 .md-typeset table:not([class]) th {
   padding: 12px 16px;
@@ -308,22 +270,21 @@ body,
    13. CARD-STYLE FOOTER NAVIGATION
 --------------------------------------------------------- */
 .md-footer__link {
-  background-color: rgba(30, 41, 59, 0.3); /* Transparent Slate */
+  background-color: rgba(30, 41, 59, 0.3);
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.05);
   margin-top: 0.5rem;
-  padding: 1.5rem; /* Larger click area */
+  padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .md-footer__link:hover {
   background-color: rgba(30, 41, 59, 0.8);
-  border-color: var(--md-primary-fg-color); /* Purple Border on Hover */
+  border-color: var(--md-primary-fg-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Brighten the text inside on hover */
 .md-footer__link:hover .md-footer__title {
   color: white;
 }
@@ -331,9 +292,8 @@ body,
 /* ---------------------------------------------------------
    14. MOBILE RESPONSIVE IMAGES
 --------------------------------------------------------- */
-/* Ensures screenshots never exceed the screen width on phones */
-.md-typeset figure img, 
+.md-typeset figure img,
 .md-typeset img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
