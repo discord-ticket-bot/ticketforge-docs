@@ -1,4 +1,4 @@
-site_name: TicketForge 
+site_name: TicketForge
 site_description: Documentation for TicketForge - The ultimate Discord ticketing bot.
 site_url: https://docs.ticketforge.xyz/
 
@@ -34,9 +34,6 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/ya3Rv9VmpR
       name: Join Support Server
-    - icon: fontawesome/brands/github
-      link: https://github.com/your-username
-      name: GitHub
 
 markdown_extensions:
   - admonition
@@ -76,3 +73,7 @@ nav:
   - Legal:
       - Terms of Service: legal/terms.md
       - Privacy Policy: legal/privacy.md
+
+plugins:
+  - search
+  - glightbox

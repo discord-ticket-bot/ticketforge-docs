@@ -23,5 +23,7 @@ You can add multiple questions to gather context (e.g., "Minecraft Username", "R
 
 Once submitted, the answers are automatically compiled into an embed field and posted as the first message inside the newly created ticket.
 
-![Form Preview](../assets/images/form-preview.png){ align=right width=300 }
-_A preview of how the form looks in Discord._
+<figure markdown>
+  ![Form Preview](../assets/images/form-preview.png){ width="400" }
+  <figcaption>A preview of how the form looks in Discord.</figcaption>
+</figure>

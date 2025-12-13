@@ -2,7 +2,7 @@
 
 The TicketForge Dashboard is the control center for your ticketing system. It allows you to configure everything visually without needing to memorize complex commands.
 
-[Access Dashboard](https://ticketforge.app/dashboard){ .md-button .md-button--primary }
+[Access Dashboard](https://ticketforge.xyz){ .md-button .md-button--primary }
 
 ## 1. Server Selection
 
@@ -35,6 +35,6 @@ Once you select a server, the sidebar provides access to specific tools:
 ## 4. Saving Changes
 
 !!! note "Unsaved Changes"
-The dashboard includes a **Safe Save** system. If you make changes (e.g., edit a message or toggle a setting), a bar will appear at the bottom of the screen prompting you to **Save Changes** or **Discard**.
+    The dashboard includes a **Safe Save** system. If you make changes (e.g., edit a message or toggle a setting), a bar will appear at the bottom of the screen prompting you to **Save Changes** or **Discard**.
 
     If you try to leave the page with unsaved changes, a confirmation modal will prevent you from losing your work.

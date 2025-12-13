@@ -20,7 +20,7 @@ TicketForge uses Discord's permission system to keep tickets private.
 2.  **Closed Roles:** Select roles that should be added or removed when a ticket is closed (e.g., allow "Admins" to see closed tickets but remove "Support Staff").
 
 !!! warning "Permission Overwrites"
-The bot must have the **Manage Channels** permission to set these overwrites. Additionally, the bot's highest role must be above the roles you are trying to manage in the Discord Server Settings.
+    The bot must have the **Manage Channels** permission to set these overwrites. Additionally, the bot's highest role must be above the roles you are trying to manage in the Discord Server Settings.
 
 ## Tickets as Threads (Premium)
 

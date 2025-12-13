@@ -17,4 +17,4 @@ The bot can send Direct Messages (DMs) to the user based on ticket events.
 - **On Close:** "Your ticket has been closed by Staff. If you need more help, please open a new ticket."
 
 !!! note "Privacy Settings"
-If a user has DMs disabled for your server, the bot will not be able to send these notifications. This is a Discord limitation.
+    If a user has DMs disabled for your server, the bot will not be able to send these notifications. This is a Discord limitation.

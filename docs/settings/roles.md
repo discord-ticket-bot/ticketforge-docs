@@ -13,7 +13,7 @@ To grant access to other staff (e.g., "Head Moderator") without giving them full
 3.  Select the roles you want to authorize.
 
 !!! note "Access Level"
-Roles added here will have full access to edit Panels, Messages, and Settings for this specific server. They cannot access Billing or Subscription settings.
+    Roles added here will have full access to edit Panels, Messages, and Settings for this specific server. They cannot access Billing or Subscription settings.
 
 ## Interaction Blacklist
 

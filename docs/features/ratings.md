@@ -8,7 +8,7 @@ Gather feedback on your support team's performance by asking users to rate their
 2.  **Enable** the system.
 
 !!! info "Two-Step Close"
-Enabling the Rating System automatically forces **Two-Step Close** (Confirmation Mode). The rating request replaces the standard "Confirm Close" prompt.
+    Enabling the Rating System automatically forces **Two-Step Close** (Confirmation Mode). The rating request replaces the standard "Confirm Close" prompt.
 
 ## Request Methods
 

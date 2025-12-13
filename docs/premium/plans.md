@@ -11,7 +11,7 @@ TicketForge operates on a Freemium model. The core ticketing features are free f
 | **Button Interaction Rate** | 30 / min         | 150 / min                              |
 | **Statistics History**      | 7 Days           | Unlimited                              |
 | **Panel Customization**     | Basic            | Full (Colors, Authors, Footers)        |
-| **Forms**                   | Basic            | Advanced (Multi-line, Validation)      |
+| **Forms**                   | 1 question       | 15 questions      |
 | **Claiming System**         | :material-close: | :material-check:                       |
 | **Automation**              | :material-close: | :material-check: (Auto-close, Auto-DM) |
 | **Tickets as Threads**      | :material-close: | :material-check:                       |

@@ -21,7 +21,7 @@ Click the **Manage Billing** button in the Premium dashboard to open the Stripe 
 - Cancel your subscription.
 
 !!! note "Permissions"
-Only the **Server Owner** (the user who owns the Discord server) can access the Billing Portal for security reasons.
+    Only the **Server Owner** (the user who owns the Discord server) can access the Billing Portal for security reasons.
 
 ## Transferring Premium
 

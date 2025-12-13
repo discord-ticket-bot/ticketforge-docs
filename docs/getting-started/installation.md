@@ -8,11 +8,9 @@ To start using TicketForge, you need to invite the bot to your Discord server an
 
 <div class="grid cards" markdown>
 
-- ## :fontawesome-brands-discord: **Invite TicketForge**
-
-  Click below to add the bot to your server. You must have **Manage Server** permissions.
-
-  [## :fontawesome-brands-discord:Invite Bot](https://discord.com/oauth2/authorize?client_id=1312832688889008218&permissions=343866207248&integration_type=0&scope=bot+applications.commands){ .md-button .md-button--primary }
+- :fontawesome-brands-discord: **Invite TicketForge**<br>
+  Click below to add the bot to your server. You must have **Manage Server** permissions.<br>
+  [:fontawesome-brands-discord: Invite Bot](https://discord.com/oauth2/authorize?client_id=1312832688889008218&permissions=343866207248&integration_type=0&scope=bot+applications.commands){ .md-button .md-button--primary }
 
 </div>
 
@@ -29,8 +27,10 @@ TicketForge requires specific permissions to function correctly. When inviting t
 | **Attach Files**    | To save and send HTML transcripts.                                   |
 | **View Audit Log**  | Used for the `History` dashboard feature to track changes.           |
 
-!!! warning "Role Hierarchy"
-For TicketForge to manage roles (e.g., adding a "Support" role to a user), the **TicketForge bot role** must be **higher** than the role it is trying to assign in your Discord Server Settings > Roles list.
+!!! warning "Permission Check"
+    Ensure the TicketForge bot role is higher than the roles you select below in your server settings.
+
+    For TicketForge to manage roles (e.g., adding a "Support" role to a user), the **TicketForge bot role** must be **higher** than the role it is trying to assign in your Discord Server Settings > Roles list.
 
 ## 3. Verify Installation
 

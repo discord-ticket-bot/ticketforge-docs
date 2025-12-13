@@ -16,7 +16,10 @@ Replaces buttons with a dropdown menu. This is ideal for saving space when you h
 - **Best for:** Help desks with many departments (Billing, Tech Support, Report, General).
 - **Logic:** Each option in the dropdown acts as a "Trigger" that links to another specific panel's logic.
 
-!!! example "How it works" 1. Create a "Master Panel". Set style to **Select Menu**. 2. Create a "Billing Panel" (configure its roles and messages). 3. In the Master Panel, add a dropdown option labeled "Billing Questions" and select the "Billing Panel" as the target.
+!!! example "How it works"
+    1. Create a "Master Panel". Set style to **Select Menu**.
+    2. Create a "Billing Panel" (configure its roles and messages).
+    3. In the Master Panel, add a dropdown option labeled "Billing Questions" and select the "Billing Panel" as the target.
 
     When a user selects "Billing Questions", the bot executes the configuration found in the "Billing Panel".
 

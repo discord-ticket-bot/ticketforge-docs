@@ -34,7 +34,7 @@ Once your panel is created and configured, you need to send it to a text channel
 The bot will immediately post the panel message with the attached buttons or dropdown menu in Discord.
 
 !!! tip "Updating Live Panels"
-If you change the text, color, or button style of a panel _after_ sending it, you do not need to delete and resend it.
+    If you change the text, color, or button style of a panel _after_ sending it, you do not need to delete and resend it.
 
     Simply click the **Update** button in the toolbar, paste the **Message Link** (Right-click message in Discord -> Copy Message Link), and the bot will edit the existing message in place.
 
