@@ -11,7 +11,7 @@ The default style. Displays simple buttons (e.g., "Create Ticket") attached to t
   <figcaption>Standard buttons are best for simple, direct actions.</figcaption>
 </figure>
 
-- **Best for:** Simple support systems with 1-3 categories.
+- **Best for:** Simple support systems for 1 panel.
 - **Configuration:** Go to the **Button Configuration** tab to change the label, color (Primary, Secondary, Success, Danger), and emoji.
 
 ## 2. Select Menu (Dropdown)

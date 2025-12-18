@@ -31,12 +31,16 @@ Whether you are running a small gaming community or a large enterprise server, T
 
 ## Key Features
 
-Based on our powerful web dashboard, TicketForge offers:
-
-- **Intuitive Ticket Creation:** Enable users to open tickets via Buttons or Select Menus.
-- **Custom Forms:** Collect specific information using modal forms.
-- **Smart Automation:** Automatically close inactive tickets or assign roles.
-- **Claiming System:** Prevent staff collisions by allowing moderators to "Claim" a ticket.
+| Feature | Description |
+| :--- | :--- |
+| :material-cursor-default-click: **Intuitive Creation** | Allow users to open tickets via customizable **Buttons** or **Select Menus**. |
+| :material-form-select: **Custom Forms** | Collect essential data before a ticket opens using interactive **Modal Forms**. |
+| :material-robot-confused: **Smart Automation** | Automate **Auto-Closing**, **User Leave Handling**, and custom **Auto-DMs**. |
+| :material-account-check: **Claiming System** | Assign specific staff to tickets to prevent collisions and track performance. |
+| :material-star-outline: **Rating System (CSAT)** | Gather user feedback with **1-5 star ratings** and a public **Review Feed**. |
+| :material-file-document-outline: **Archiving & Logging** | Generate permanent **HTML Transcripts** and real-time **Audit Logs** of all events. |
+| :material-calendar-clock: **Schedules** | Set **Operational Hours** and timezones to control when your team is available. |
+| :material-palette: **Complete Customization** | Full control over **Embed Colors**, **Author Icons**, and **Message Variables**. |
 
 ## Need Help?
 

@@ -73,117 +73,63 @@ For every message type, you can have a **Plain Text** message with multiple **Ri
 
 ## Variables & Placeholders
 
-You can use dynamic placeholders in almost any text field. These will be replaced with real data when the message is sent.
+### User & Author
+| Variable | Description |
+| :--- | :--- |
+| `{user_mention}` | Mentions the user (e.g., @Username) |
+| `{user_name}` | The user's username |
+| `{user_id}` | The user's unique Discord ID |
+| `{user_avatar}` | URL of the user's avatar image |
+| `{user_nickname}` | The user's server nickname |
+| `{user_tag}` | The user's 4-digit discriminator |
+| `{user_full}` | Username and discriminator (User#0000) |
+| `{author}` | Mentions the staff/user who triggered the action |
+| `{author.name}` | The author's username |
+| `{author.id}` | The author's unique Discord ID |
+| `{author.icon}` | URL of the author's profile picture |
 
-### User Variables
+### Ticket & Claiming
+| Variable | Description |
+| :--- | :--- |
+| `{ticket}` | Mentions the ticket channel |
+| `{ticket.id}` | The unique ID of the channel |
+| `{ticket_opener}` | Mentions the user who created the ticket |
+| `{ticket.user.name}` | The ticket owner's username |
+| `{claim.user}` | Mentions the staff member who claimed the ticket |
+| `{claim.user.name}` | The claimer's username |
+| `{claim.user.icon}` | URL of the claimer's profile picture |
+| `{ticket_closer}` | Mentions the user who closed the ticket |
 
-_Refers to the specific user mentioned in the context (usually the ticket owner)._
-
-| Variable          | Description                                |
-| :---------------- | :----------------------------------------- |
-| `{user}`          | Mentions the user (e.g., <@123456789>)     |
-| `{user_mention}`  | Alias for `{user}`                         |
-| `{user.name}`     | The user's username                        |
-| `{user_name}`     | Alias for `{user.name}`                    |
-| `{user.id}`       | The user's unique Discord ID               |
-| `{user_id}`       | Alias for `{user.id}`                      |
-| `{user.avatar}`   | URL to the user's avatar image             |
-| `{user_avatar}`   | Alias for `{user.avatar}`                  |
-| `{user.tag}`      | The user's 4-digit discriminator (or 0)    |
-| `{user_tag}`      | Alias for `{user.tag}`                     |
-| `{user.full}`     | The user's full tag (Username#0000)        |
-| `{user_full}`     | Alias for `{user.full}`                    |
-| `{user.nickname}` | The user's nickname in the specific server |
-| `{user_nickname}` | Alias for `{user.nickname}`                |
-
-### Author Variables
-
-_Refers to the person performing the action (e.g., the Staff member clicking "Close" or "Claim")._
-
-| Variable            | Description                              |
-| :------------------ | :--------------------------------------- |
-| `{author}`          | Mentions the author (e.g., <@123456789>) |
-| `{author.name}`     | The author's username                    |
-| `{author.id}`       | The author's unique Discord ID           |
-| `{author.avatar}`   | URL to the author's avatar image         |
-| `{author.icon}`     | Alias for `{author.avatar}`              |
-| `{author.tag}`      | The author's 4-digit discriminator       |
-| `{author.full}`     | The author's full tag (Username#0000)    |
-| `{author.nickname}` | The author's nickname in the server      |
-
-### Ticket Context
-
-| Variable          | Description                                           |
-| :---------------- | :---------------------------------------------------- |
-| `{ticket}`        | Clickable link/mention of the current ticket channel  |
-| `{ticket.id}`     | The ID of the channel                                 |
-| `{ticket.owner}`  | Mentions the creator of the ticket (Same as `{user}`) |
-| `{ticket.user}`   | Alias for `{ticket.owner}`                            |
-| `{ticket_opener}` | Alias for `{ticket.owner}`                            |
-| `{ticket_closer}` | Mentions the user who clicked Close                   |
-| `{count}`         | The unique ticket number (e.g., "45")                 |
-
-### Claiming Variables
-
-| Variable                | Description                                             |
-| :---------------------- | :------------------------------------------------------ |
-| `{claim.user}`          | Mentions the staff member currently claiming the ticket |
-| `{claim.user.name}`     | Claimer's username                                      |
-| `{claim.user.id}`       | Claimer's ID                                            |
-| `{claim.user.nickname}` | Claimer's server nickname                               |
-| `{claim.user.icon}`     | URL of claimer's avatar                                 |
-| `{claim.user.tag}`      | Claimer's discriminator                                 |
-| `{claim.user.full}`     | Claimer's full username                                 |
-
-### Panel & Server
-
-| Variable              | Description                                   |
-| :-------------------- | :-------------------------------------------- |
-| `{panel.name}`        | The name of the panel used (e.g., "Support")  |
-| `{panel.count}`       | Total number of tickets created in this panel |
-| `{panel.ticketLimit}` | The ticket limit for this specific panel      |
-| `{server.name}`       | Name of the Discord server                    |
-| `{server_name}`       | Alias for `{server.name}`                     |
-| `{server.id}`         | The server's ID                               |
-| `{server.members}`    | Total member count                            |
-| `{server_members}`    | Alias for `{server.members}`                  |
-| `{server.icon}`       | URL of the server icon                        |
-| `{server.banner}`     | URL of the server banner                      |
-
-### Channel Variables
-
-| Variable            | Description                  |
-| :------------------ | :--------------------------- |
+### Server & Channel
+| Variable | Description |
+| :--- | :--- |
+| `{server.name}` | The name of your Discord server |
+| `{server_members}` | Total member count of the server |
 | `{channel_mention}` | Mentions the current channel |
-| `{channel.name}`    | Name of the current channel  |
-| `{channel_name}`    | Alias for `{channel.name}`   |
-| `{channel.id}`      | ID of the current channel    |
+| `{panel.name}` | The name of the panel being used |
 
 ### Time & Dates
-
-| Variable             | Description                               |
-| :------------------- | :---------------------------------------- |
-| `{time}`             | Current Unix timestamp (numbers)          |
-| `<t:{time}>`         | Short Date Time: **12 June 2025 14:00**   |
-| `<t:{time}:R>`       | Relative Time: **5 minutes ago**          |
-| `{time.created}`     | Timestamp of when the ticket was opened   |
-| `{time.deleted}`     | Timestamp of when the ticket was deleted  |
-| `{time.created.age}` | Human-readable duration (e.g., "2 days")  |
-| `{time.deleted.age}` | Time between ticket creation and deletion |
-
-### Forms & Special
-
-| Variable    | Description                                                           |
-| :---------- | :-------------------------------------------------------------------- |
-| `{empty}`   | Inserts a special invisible character (useful for blank embed fields) |
-| `{random}`  | A random number (see modifiers below)                                 |
-| `{Role ID}` | Copy a Role ID (e.g., `987654321`) and paste it to ping that role.    |
+| Variable | Description |
+| :--- | :--- |
+| `{time}` | Current Unix time in seconds |
+| `<t:{time}>` | Discord native timestamp (e.g., 12 December 2025) |
+| `{time.created.age}` | How long ago the ticket was opened |
 
 ---
 
 ## Variable Modifiers
 
-You can process variables to format them exactly how you need. Append `?modifier` inside the brackets.
+Add a `?` to any variable to change its format. Example: `{user_name?uppercase}`.
+
+| Modifier | What it does |
+| :--- | :--- |
+| `?uppercase` | **SHOUTING TEXT** |
+| `?lowercase` | **quiet text** |
+| `?maxLength=X` | Cuts off text after X characters |
+| `?padLeft=X` | Adds zeros to the left (e.g. `{count?padLeft=4}` → 0042) |
+| `?fallback=text` | What to show if the variable is empty |
+| `?math=+100` | Algebraic operations on numbers or timestamps |
+| `?clean` | Removes backticks to prevent breaking code blocks |
 
 ### Text Formatting
 

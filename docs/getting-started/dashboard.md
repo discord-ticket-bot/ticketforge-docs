@@ -1,6 +1,8 @@
 # Dashboard Overview
 
-The TicketForge Dashboard is the control center for your ticketing system. It allows you to configure everything visually without needing to memorize complex commands.
+The TicketForge Dashboard is a **powerful, fully responsive management system** designed to be the heart of your ticketing system. It provides a comprehensive visual interface to build automation, design professional embeds, and manage your staff—accessible from both desktop and mobile devices.
+
+While TicketForge supports intuitive Discord slash commands for quick actions, the dashboard allows you to handle advanced configurations without the limitations of a chat interface.
 
 [Access Dashboard](https://ticketforge.xyz){ .md-button .md-button--primary }
 
@@ -34,11 +36,14 @@ Once you select a server, the sidebar provides access to specific tools:
 | :material-chart-bar: **Statistics**             | View charts regarding ticket volume, claim times, and staff activity.                                |
 | :material-crown: **Premium**                    | Manage your subscription, view invoices, or activate a license key.                                  |
 
-## 3. Top Navigation
+## 3. Navigation
 
-- **Server Context:** The top left shows which server you are currently editing.
-- **User Profile:** The top right allows you to switch accounts or log out.
-- **Quick Switch:** Use the sidebar dropdown (if available) to quickly jump between different panels in the same server.
+The dashboard is designed to keep everything within reach so you don't have to keep clicking "Back."
+
+- **Global Links:** At the very top, you’ll find quick links to **Invite** the bot, join our **Support** server, manage **Premium**, or jump back into these **Docs**.
+- **Breadcrumbs:** Right below the top bar, the breadcrumbs show exactly where you are (e.g., `Server Name > Panel Name`). You can click the server name to go back to the main server settings.
+- **User Profile:** Your Discord avatar is in the top right. Click it if you need to log out, select a server or check the status of TicketForge.
+- **Quick Switch:** In the top-left sidebar widget, the **Switch** button lets you jump between different panels in the same server without leaving the editor.
 
 ## 4. Saving Changes
 

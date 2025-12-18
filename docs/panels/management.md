@@ -17,20 +17,35 @@ You can define a naming pattern for your tickets.
   - `{count}` - The unique ticket number.
   - `{panel.name}` - The name of the panel.
 
-## Role Access (Permissions)
+## Role Automation
 
-TicketForge uses Discord's permission system to keep tickets private.
+TicketForge can automatically give or take away roles from a user depending on whether their ticket is open or closed. This is perfect for keeping your member list organized or giving temporary access while a ticket is active.
 
-1.  **Opened Roles:** Select which roles should have access when a ticket is created (e.g., "Support Team", "Moderator").
-2.  **Closed Roles:** Select roles that should be added or removed when a ticket is closed (e.g., allow "Admins" to see closed tickets but remove "Support Staff").
+### Ticket Opened
+
+- **Add Roles:** Select roles that should be automatically given to the user the moment they open a ticket. This is useful for tagging users with a "Currently in Support" role.
+- **Remove Roles:** Automatically strip roles from the user when the ticket is created 
+
+### Ticket Closed
+
+When a ticket is closed, you can clean up roles or add new ones:
+
+- **Add Roles:** Give the user a specific role once their ticket is closed (e.g., a "Ticket History" role).
+- **Remove Roles:** Automatically strip roles from the user when the ticket is closed (e.g., removing the "Active Ticket" role you gave them at the start).
+
+!!! tip "Staff Access"
+    If you are looking to set who can **view and reply** to the tickets, you should set your **Support Team** roles in the "General & Quickedit" section of the panel editor.
 
 !!! warning "Permission Overwrites"
     The bot must have the **Manage Channels** permission to set these overwrites. Additionally, the bot's highest role must be above the roles you are trying to manage in the Discord Server Settings.
 
-## Tickets as Threads (Premium)
+## Internal Staff Threads (Premium)
 
-Instead of creating a new Text Channel for every ticket, you can choose to create **Private Threads** inside a single parent channel.
+When a ticket is opened, TicketForge can automatically create a private thread inside the ticket channel. This is a dedicated space where your staff can discuss the case or take notes without the user ever seeing the messages.
 
-- **Cleaner Channel List:** Keeps your sidebar organized.
-- **Parent Channel:** Select a text channel where all threads will be spawned.
-- **Permissions:** Thread permissions inherit from the parent channel, but TicketForge will invite the relevant staff members automatically if configured.
+- **Private Discussions:** Keep internal coordination, evidence, or staff-only notes hidden from the ticket opener.
+- **Auto-Invite:** TicketForge automatically invites your configured Support Team to the thread so they don't have to manually join.
+- **Cleaner Logs:** Keeps the main ticket channel focused on the conversation with the user, while the "behind the scenes" talk stays in the thread.
+
+!!! note "Visibility"
+    Because this is a Discord thread inside the ticket channel, it will automatically be deleted whenever the main ticket channel is closed or deleted.

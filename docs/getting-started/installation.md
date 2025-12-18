@@ -23,17 +23,22 @@ To start using TicketForge, you need to invite the bot to your Discord server an
 
 TicketForge requires specific permissions to function correctly. When inviting the bot, ensure the following permissions are granted:
 
-| Permission          | Reason                                                               |
-| :------------------ | :------------------------------------------------------------------- |
-| **Manage Channels** | To create ticket channels and rename them.                           |
-| **Manage Roles**    | To assign support roles and manage permissions for specific tickets. |
-| **Manage Messages** | To pin messages and delete bot commands/triggers.                    |
-| **Embed Links**     | To send the rich embed panels.                                       |
-| **Attach Files**    | To save and send HTML transcripts.                                   |
-| **View Audit Log**  | Used for the `History` dashboard feature to track changes.           |
+| Permission | Reason |
+| :--- | :--- |
+| **Manage Roles** | To assign support roles, manage ticket permissions, and automate roles during claiming. |
+| **Manage Channels** | To create ticket channels, rename them, and manage categories. |
+| **View Channels** | Essential for the bot to see and interact with your server's channels. |
+| **Send Messages** | To post panels, welcome messages, and response triggers inside tickets. |
+| **Send Messages in Threads** | Required if you use the "Tickets as Threads" Premium feature. |
+| **Create Private Threads** | Allows the bot to create private ticket threads for a cleaner sidebar (Premium). |
+| **Manage Messages** | To pin messages and delete bot triggers/commands to keep channels clean. |
+| **Embed Links** | Necessary to send rich visual panels, buttons, and formatted logs. |
+| **Attach Files** | Used to generate and upload HTML transcripts and audit logs. |
+| **Read Message History** | Required to generate transcripts and view context of existing tickets. |
+| **Use External Emojis** | Allows the bot to display custom branding and icons in its messages. |
 
 !!! warning "Permission Check"
-    Ensure the TicketForge bot role is higher than the roles you select below in your server settings.
+    Ensure the TicketForge bot role is higher than the roles you select below in your server settings. 
 
     For TicketForge to manage roles (e.g., adding a "Support" role to a user), the **TicketForge bot role** must be **higher** than the role it is trying to assign in your Discord Server Settings > Roles list.
 
