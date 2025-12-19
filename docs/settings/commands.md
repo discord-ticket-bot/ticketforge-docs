@@ -28,23 +28,29 @@ You can fine-tune where commands work:
 - **Allowed Roles:** Only these roles can use the command.
 - **Blocked Roles:** These roles are specifically prevented from using the command.
 
-## Available Commands
+# Available Commands
 
-| Command               | Description                                                                         |
-| :-------------------- | :---------------------------------------------------------------------------------- |
-| **General**           |                                                                                     |
-| `/help`               | Displays the help menu with a list of available commands.                           |
-| `/ping`               | Checks bot latency and API response time.                                           |
-| `/invite`             | Provides the link to invite TicketForge to other servers.                           |
-| `/premium`            | Shows the current server subscription tier and expiry date.                         |
-| **Ticket Management** |                                                                                     |
-| `/close`              | Closes the current ticket (triggers the Close logic configured in the panel).       |
-| `/claim`              | Assigns the ticket to the user running the command.                                 |
-| `/unclaim`            | Releases the ticket back to the general pool.                                       |
-| `/add <user/role>`    | Adds a specific user or an entire role to the current ticket.                       |
-| `/remove <user/role>` | Removes a specific user or role from the current ticket.                            |
-| `/rename <name>`      | Renames the current ticket channel.                                                 |
-| `/priority`           | Sets the priority level of the ticket (Low, Medium, High, Urgent).                  |
-| **Admin**             |                                                                                     |
-| `/setup`              | Launches the interactive setup wizard for creating panels directly in Discord.      |
-| `/purge-tickets`      | Opens a menu to bulk delete tickets based on their status (All Open or All Closed). |
+| Command | Description |
+| :--- | :--- |
+| **Tickets** | |
+| `/add <user/role>` | Adds a specific user or an entire role to the current ticket. |
+| `/archive` | Archives the current ticket, generating a transcript. |
+| `/close` | Closes the current ticket (triggers the Close logic configured in the panel). |
+| `/delete` | Permanently deletes the current ticket channel. |
+| `/remove <user/role>` | Removes a specific user or role from the current ticket. |
+| `/rename <name>` | Renames the current ticket channel to the specified name. |
+| `/re-open` | Re-opens a previously closed ticket for further communication. |
+| `/claim ticket` | Assigns the ticket to the staff member running the command. |
+| `/unclaim ticket` | Releases the ticket back to the general pool by removing the assigned staff member. |
+| `/priority` | Sets the priority level of the ticket (Low, Medium, High, Urgent). |
+| `/thread` | Creates a private, staff-only thread within the ticket for internal discussion. |
+| **Configuration** | |
+| `/setup` | Launches the interactive setup wizard for creating and managing panels directly in Discord. |
+| `/premium` | Shows the current server subscription tier, active features, and expiry date. |
+| **Moderation** | |
+| `/purge` | Opens a menu to bulk delete tickets based on their status (e.g., All Open or All Closed). |
+| **General** | |
+| `/help` | Displays the help menu with a comprehensive list of available commands. |
+| `/ping` | Checks the bot's latency and Discord API response time. |
+| `/invite` | Provides the official link to invite TicketForge to other servers. |
+| `/vote` | Provides a link to vote for TicketForge on bot lists to earn rewards or support the bot. |

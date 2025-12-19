@@ -64,6 +64,7 @@ nav:
       - Claiming System: features/claiming.md
       - Rating System: features/ratings.md
       - Limits & Schedules: features/limits.md
+      - Ticket as Thread: features/ticketasthread.md
   - Server Settings:
       - Roles & Permissions: settings/roles.md
       - Commands: settings/commands.md
@@ -71,8 +72,7 @@ nav:
       - Subscription Plans: premium/plans.md
       - Managing Billing: premium/billing.md
   - Legal:
-      - Terms of Service: legal/terms.md
-      - Privacy Policy: legal/privacy.md
+      - Terms and policy: legal/termsandpolicy.md
 
 plugins:
   - search

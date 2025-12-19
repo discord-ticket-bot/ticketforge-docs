@@ -29,11 +29,11 @@ Define your support hours to manage user expectations.
 
 <figure markdown>
   ![Schedule Grid](../assets/images/features/schedule-grid.png){ loading=lazy }
-  <figcaption>The interactive weekly grid. Blue indicates open hours.</figcaption>
+  <figcaption>The interactive weekly grid. Purple indicates open hours.</figcaption>
 </figure>
 
 1.  **Timezone:** Set your server's local timezone.
-2.  **Weekly Grid:** Click on hour blocks to toggle them **Open** (Blue) or **Closed** (Grey).
+2.  **Weekly Grid:** Click on hour blocks to toggle them **Open** (Purple) or **Closed** (Grey).
 3.  **Bypass Roles:** Select roles that can open tickets even when support is closed (e.g., "Emergency").
 
 ### Closure Behavior
