@@ -35,6 +35,29 @@ If you have problematic users or roles that abuse the ticket system, you can bla
 
 **Effect:** Users with these roles cannot click _any_ button, use _any_ dropdown, or execute _any_ slash command associated with the bot.
 
+## Bot Identity
+
+You can customize how TicketForge appears specifically in your server, allowing it to match your server's theme or branding.
+
+!!! example "Premium Feature"
+    Changing the Bot Identity is a **Premium** feature.
+
+1.  Go to **Server Config**.
+2.  Find the **Bot Identity** card.
+
+### Server Nickname
+You can set a specific nickname for the bot in your server. This will change how the bot's name appears in the member list and in chat messages. 
+Leaving this field blank will revert the bot to its default username.
+
+### Server Avatar
+You can upload a custom image (PNG, JPG, or GIF) to act as the bot's profile picture **only inside your server**. 
+If you reset this, the bot will revert to its global Application Icon.
+
+<figure markdown>
+  ![Bot Identity Config](../assets/images/settings/bot-identity.png){ loading=lazy }
+  <figcaption>Setting a custom nickname and avatar for the bot.</figcaption>
+</figure>
+
 ## Server Language
 
 You can change the language the bot uses for default system messages (e.g., errors, time formatting).
