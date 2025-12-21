@@ -17,7 +17,7 @@ Navigate to **Archiving & Logging** in the Panel Editor.
 
 1.  **Storage Channel:** Select a text channel in your server where the bot will post the transcript files.
 2.  **Auto-Save:** automatically generate a transcript when a ticket is closed.
-    - _Trigger:_ Choose whether to save on **Close** (archive state) or **Delete** (permanent removal).
+    - _Trigger:_ Choose whether to save on **Close** (closed state) or **Delete** (permanent removal).
 3.  **DM Transcript:** Send the HTML file directly to the user who opened the ticket.
     - _Note:_ This will fail if the user has Direct Messages disabled.
 
@@ -37,7 +37,7 @@ Separate from message history, the Event Log tracks the _lifecycle_ of the ticke
 | **Reopened** | A closed ticket is re-opened.          |
 | **Renamed**  | The channel name is changed via bot.   |
 | **Deleted**  | The channel is permanently deleted.    |
-| **Archived** | A transcript file is generated.        |
+| **Transcribed** | A transcript file is generated.        |
 
 ### Log Content
 

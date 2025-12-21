@@ -34,7 +34,7 @@ You can fine-tune where commands work:
 | :--- | :--- |
 | **Tickets** | |
 | `/add <user/role>` | Adds a specific user or an entire role to the current ticket. |
-| `/archive` | Archives the current ticket, generating a transcript. |
+| `/archive` | Transcribes the current ticket. |
 | `/close` | Closes the current ticket (triggers the Close logic configured in the panel). |
 | `/delete` | Permanently deletes the current ticket channel. |
 | `/remove <user/role>` | Removes a specific user or role from the current ticket. |
