@@ -1,5 +1,6 @@
 # MkDocs build directory
 site/
+.cache/
 
 # System files
 .DS_Store
