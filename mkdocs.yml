@@ -77,7 +77,9 @@ nav:
 plugins:
   - search
   - glightbox
-  - social: # ADD THIS
+  - social:
+      cards_layout: default/variant  # Tries a modern sidebar layout
       cards_layout_options:
-        background_color: "#020617" # Matches your dark background
-        color: "#7c3aed" # Matches your purple text
+        font_family: Jost
+        background_color: "#020617"
+        color: "#f8fafc"
