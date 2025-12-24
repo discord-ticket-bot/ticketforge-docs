@@ -28,5 +28,3 @@ If you have questions regarding your data, wish to request a data deletion (Righ
 
 *   **Discord:** Join our [Support Server](https://discord.gg/ticketforge) and open a ticket.
 *   **Email:** Contact us at `support@ticketforge.xyz`
-
-*Last updated: October 2025*

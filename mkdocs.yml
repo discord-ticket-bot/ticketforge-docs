@@ -52,6 +52,7 @@ nav:
   - Getting Started:
       - Installation & Invite: getting-started/installation.md
       - Dashboard Overview: getting-started/dashboard.md
+      - Create First Panel: panels/create.md
   - Panel Configuration:
       - Creating Panels: panels/create.md
       - Interaction Styles: panels/interaction-styles.md
